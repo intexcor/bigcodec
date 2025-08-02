@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "torch", "huggingface_hub", "einops", "numpy", "torchaudio", "einops"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="bigcodec"
+dynamic = ["version"]
+authors = [
+    {name = "Ivan Shivalov"},
+]
+description = "Module with search monotonic alignment algorithm"
+readme = "README.md"
+license = "MIT"
+#urls = {url = "https://github.com/intexcor/monotonic_align"}
+
+
+dependencies = [
+    "torch",
+    "einops",
+    "numpy",
+    "torchaudio",
+    "einops",
+    "huggingface_hub"
+]
+
+
+[tool.setuptools.dynamic]
+version = {attr = "bigcodec.__version__"}
