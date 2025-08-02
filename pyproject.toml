@@ -23,6 +23,8 @@ dependencies = [
     "huggingface_hub"
 ]
 
+[project.urls]
+Homepage = "https://github.com/intexcor/bigcodec"
 
 [tool.setuptools.dynamic]
 version = {attr = "bigcodec.__version__"}
