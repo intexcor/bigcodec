@@ -2,7 +2,7 @@ import torch.accelerator
 from bigcodec import BigCodec
 import torchaudio
 
-codec = BigCodec.from_pretrained("intexcp/hf_bigcodecs")
+codec = BigCodec.from_pretrained("intexcp/bigcodec")
 
 wav = torchaudio.load("enc.wav")[0]
 wav = wav.unsqueeze(0)
