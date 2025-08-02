@@ -4,10 +4,13 @@ Python library for bigcodec. This is something that the author of bigcodec didn'
 
 ## Setup
 
+```
 pip install bigcodec
+```
 
 ## Usage
 
+```
 import torch.accelerator
 from bigcodec import BigCodec
 import torchaudio
@@ -24,5 +27,7 @@ with torch.no_grad():
     dec = codec.decode(enc)
 print(enc)
 torchaudio.save("dec.wav", dec.squeeze(0).cpu(), 16000, encoding="PCM_F")
+```
+
 
 
